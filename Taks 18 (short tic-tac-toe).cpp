@@ -354,23 +354,11 @@ int showSettings() {
 	system("cls");
 	srand(time(NULL));
 
-	/*for (int i = 0; i < 150; i++)
-	{
-		cout << "[" << i << "] - " << "\x1b[" << i << "mHELLO\x1b[0m " << endl;
-	}*/
-
 	cout << "\x1b[104m<1>\x1b[0m Цвета: \n";
-	/*cout << "\x1b[89m89 - классический;\n\x1b[90m90 - серый;\n\x1b[91m91 - красный;\n\x1b[92m92 - зеленый;\n";
-	cout << "\x1b[93m93 - желтый\n\x1b[94m94 - синий;\n\x1b[95m95 - фиолетовый;\n\x1b[96m96 - голубой;\n\x1b[97m97 - белый\n\n";*/
 
 	cout << "\x1b[104m<2>\x1b[0m Первым ходит: \n";
-	/*cout << "<1> Крестик \n";
-	cout << "<2> Нолик \n\n";*/
 
 	cout << "\x1b[104m<3>\x1b[0m Размеры поля: \n";
-	/*cout << "<1> 3x3 \n";
-	cout << "<2> 4x4 \n";
-	cout << "<3> 5x5 \n\n";*/
 
 	cout << "\x1b[104m<4>\x1b[0m Начать игру: \n";
 
@@ -445,44 +433,6 @@ int showSettings() {
 	default: goPlayTest1(firstMove, sizeField, colorSymbX, colorSymbO);
 		cout << "Начался классический тип игры: \n";
 	}
-
-	/*cout << "Выберите цвет крестика: ";
-	cin >> colorSymbX;
-	if (colorSymbX > 97 || colorSymbX < 89) {
-		colorSymbX = rand() % 9 + 89;
-		cout << "Цвет крестика будет: " << "\x1b[" << colorSymbX << "m" << colorSymbX << "\x1b[0m\n";
-	}
-	cout << "Выберите цвет нолика: ";
-	cin >> colorSymbO;
-	if (colorSymbO > 97 || colorSymbO < 89) {
-		colorSymbO = rand() % 9 + 89;
-		cout << "Цвет нолика будет: " << "\x1b[" << colorSymbO << "m" << colorSymbO << "\x1b[0m\n";
-	}*/
-
-	/*cout << "\nКто ходит первый: ";
-	cin >> firstMove;
-	if (firstMove > 3) {
-		firstMove = rand() % 2 + 1;
-		cout << "Первым будет ходить: " << firstMove << "\x1b[0m\n";
-	}*/
-
-	/*cout << "\nВыберите размер поля: ";
-	cin >> sizeField;
-	if (sizeField < 1 || sizeField > 3) {
-		sizeField = rand() % 3 + 1;
-		cout << "Размер поля будет: " << sizeField << "\x1b[0m\n";
-	}*/
-
-
-	/*switch (doStart) {
-	case 'y': goPlayTest(firstMove, sizeField, colorSymbX, colorSymbO);
-		break;
-	case 'n': system("cls");
-		cout << "Вы покинули игру :с";
-		break;
-	default: goPlayTest(firstMove, sizeField, colorSymbX, colorSymbO);
-		break;
-	}*/
 
 	return 0;
 }
